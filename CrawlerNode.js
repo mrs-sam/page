@@ -15,6 +15,7 @@ class CrawlerNode {
         this.rmqUrl = `amqp://${serverNames.rabbitServerName}`;
         this.queue = `urlOf${this.siteId}`;
         this.folder = `upload/${this.siteId}`;
+        this.pageCollectionName = `Pages_${siteId}`;
     }
 
 }

@@ -34,7 +34,7 @@ describe('start crawl', function() {
             uri: 'http://localhost:8080/site',
             body: {
                 url: 'http://localhost:8080/test-site/',
-                numberOfSiteWorkers: 1
+                numberOfSiteWorkers: 3
             },
             json: true
 
