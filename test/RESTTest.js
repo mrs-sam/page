@@ -26,31 +26,6 @@ describe('start crawl', function() {
 
     });
 
-    it('should see one active manager', function(done) {
-        var options = {
-            method: 'GET',
-            uri: 'http://localhost:8080/site',
-            json: true
-
-        };
-
-        setTimeout(
-            () => {
-                request.get(options)
-                    .then(parsedBody => {
-                        var managersIds = parsedBody;
-                        if (managersIds.length === 1) {
-                            done();
-                        } else {
-                            done(`there is ${managersIds.length} managers which is less or more than 1 manager`);
-                        }
-                    })
-                    .catch(err => {
-                        done(err);
-                    });
-            }, 1000);
-    });
-
     it('should see 5 pages', function(done) {
         this.timeout(40000);
 
