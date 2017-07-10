@@ -14,8 +14,6 @@ class SiteWorker extends CrawlerNode {
         super(siteId, serverNames);
         this.show = show;
         this.workerId = uuidv4();
-        this.queue = `urlOf${siteId}`;
-        this.pageCollectionName = `Pages_${siteId}`;
         winston.info(`slave ${this.workerId}: created`);
     }
 
@@ -105,7 +103,7 @@ function crawlAndSave(currentURL, contentFrom) {
             from: contentFrom,
             body: analysisResult.hash,
             hrefs: analysisResult.hrefs
-        };
+        };      
         this.db.collection(this.pageCollectionName).save(testedPage, null, () => {
             winston.info(`SiteWorker ${this.workerId}: body of ${currentURL} saved`);
         });

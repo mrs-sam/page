@@ -28,6 +28,8 @@ class SiteManager extends CrawlerNode {
                 state: 'started'
             });
         }).then(() => {
+            return this.db.collection(this.pageCollectionName).createIndex('url', { unique:true });
+        }).then(() => {
             startWorkers.call(this);
             queueRootURL.call(this);
             winston.info('SiteManager started');
