@@ -1,0 +1,16 @@
+sudo: required
+
+language: node_js
+
+node_js:
+  - "7"
+
+services:
+  - docker
+
+before_install:
+  - cd docker
+  - docker-compose build
+  - docker-compose up -d
+  - cd ..
+  - docker ps -a

@@ -1,0 +1,19 @@
+version: '2'
+services:
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+  rabbit:
+    image: "rabbitmq:3"
+    ports:
+      - "5672:5672"
+  sftp:
+    image: "xblanc/sftp"
+    command: mrssam:mrssam:::upload
+    ports:
+      - "2222:2222" 
+  master:
+    build: .
+    ports:
+      - "8080:8080"

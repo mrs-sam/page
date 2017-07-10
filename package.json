@@ -1,0 +1,44 @@
+{
+  "name": "mrs-sam-page",
+  "version": "0.0.1",
+  "description": "Mrs Sam Page is a distributed crawler. It aims at crawling huge web sites.",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install",
+    "pretest": "eslint .",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xblanc33/mrs-sam-page.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Crawler"
+  ],
+  "author": "Xavier Blanc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xblanc33/mrs-sam-page/issues"
+  },
+  "homepage": "https://github.com/xblanc33/mrs-sam-page#readme",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "body-parser": "^1.17.2",
+    "bower": "^1.8.0",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.27",
+    "nightmare": "^2.10.0",
+    "path": "^0.12.7",
+    "sftp-promises": "^1.4.2",
+    "urijs": "^1.18.10",
+    "winston": "^2.3.1",
+    "yargs": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "mocha": "^3.4.2",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
+  }
+}

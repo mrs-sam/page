@@ -1,0 +1,27 @@
+{
+  "name": "mrs-sam",
+  "description": "Mrs Sam Page is a JS Web Crawler.",
+  "main": "index.js",
+  "authors": [
+    "Xavier Blanc"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "JavaScript",
+    "Crawler"
+  ],
+  "homepage": "https://github.com/xblanc33/mrs-sam",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "components-font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,5 @@
+**/bower_components
+**/node_modules
+webApp/js/freelancer*.js
+webApp/js/ie-*.js
+webApp/js/jq*.js
