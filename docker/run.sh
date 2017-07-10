@@ -2,7 +2,7 @@
 rm -fr work
 mkdir -p work 
 cd work
-git clone https://github.com/xblanc33/mrs-sam-page.git
+git clone https://github.com/mrs-sam/page.git
 ls 
 cd mrs-sam-page
 npm install

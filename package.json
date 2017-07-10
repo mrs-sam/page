@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xblanc33/mrs-sam-page.git"
+    "url": "git+https://github.com/mrs-sam/page.git"
   },
   "keywords": [
     "JavaScript",
@@ -19,9 +19,9 @@
   "author": "Xavier Blanc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xblanc33/mrs-sam-page/issues"
+    "url": "https://github.com/mrs-sam/page/issues"
   },
-  "homepage": "https://github.com/xblanc33/mrs-sam-page#readme",
+  "homepage": "https://github.com/mrs-sam/page#readme",
   "dependencies": {
     "amqplib": "^0.5.1",
     "body-parser": "^1.17.2",
