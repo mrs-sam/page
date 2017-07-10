@@ -38,9 +38,6 @@ describe('start crawl', function() {
             () => {
                 request.get(options)
                     .then(parsedBody => {
-                        //console.log('BODY');
-                        //console.log(parsedBody);
-                        //console.log(JSON.parse(parsedBody));
                         var managersIds = parsedBody;
                         if (managersIds.length === 1) {
                             done();
@@ -72,17 +69,14 @@ describe('start crawl', function() {
             .then(parsedBody => {
                 var len = parsedBody.length;
                 var siteId = parsedBody.toString().slice(len - 24, len);
-                console.log(siteId);
                 return siteId;
             })
             .then(siteId => {
-                console.log(`Pages_${siteId}`);
                 setTimeout(
                     () => {
 
                         MongoClient.connect('mongodb://localhost:27017/mrs-sam-page')
                             .then(db => {
-                                console.log(`Pages_${siteId}`);
                                 return db.collection(`Pages_${siteId}`).count();
                             })
                             .then(nb => {
