@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/xblanc33/mrs-sam-page.svg?branch=master)](https://travis-ci.org/xblanc33/mrs-sam-page)
+[![Build Status](https://travis-ci.org/mrs-sam/page.svg?branch=master)](https://travis-ci.org/mrs-sam/page)
 
 # Mrs-Sam Page : A crawler for fetching a huge set of web pages
 
