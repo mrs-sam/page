@@ -114,7 +114,7 @@ function crawlAndSave(currentURL, contentFrom) {
 
 function isHrefValid(href) {
     var hrefUri = uri(href);
-    if (hrefUri.protocol() != 'http')
+    if (hrefUri.protocol() != 'http' && (hrefUri.protocol() != 'https'))
         return false;
 
     hrefUri = hrefUri.absoluteTo(this.baseURI);
@@ -126,7 +126,7 @@ function isHrefValid(href) {
         return false;
 
     var pathTokens = hrefUri.path().split('.');
-    if (pathTokens.length > 1 && pathTokens[pathTokens.length - 1].toLowerCase() != 'html')
+    if (pathTokens.length > 1 && pathTokens[pathTokens.length - 1].toLowerCase() != 'html' && pathTokens[pathTokens.length - 1].toLowerCase() != 'php')
         return false;
 
     return true;
