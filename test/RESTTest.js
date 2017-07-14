@@ -26,7 +26,7 @@ describe('start crawl', function() {
 
     });
 
-    it('should see 5 pages', function(done) {
+    it('should see 6 pages', function(done) {
         this.timeout(40000);
 
         var options = {
@@ -58,7 +58,7 @@ describe('start crawl', function() {
                                 if (nb === 5) {
                                     done();
                                 } else {
-                                    done(`${nb} pages, should be 5.`);
+                                    done(`${nb} pages, should be 6.`);
                                 }
                             })
                             .catch(err => {
